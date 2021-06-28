@@ -15,35 +15,30 @@ public class HardcoreSpigotServer {
 
     private static HardcoreSpigotServer server;
 
-    private Set<PacketHandler> packetHandlers = new HashSet<>();
-    private Set<MovementHandler> movementHandlers = new HashSet<>();
-
     private KnockbackHandler knockbackHandler;
 
 
-    public HardcoreSpigotServer() { }
+    public HardcoreSpigotServer() {
+    }
 
     public static HardcoreSpigotServer getServer() {
         return server;
     }
 
     public void addPacketHandler(PacketHandler packetHandler) {
-        this.packetHandlers.add(packetHandler);
+
     }
 
     public void addMovementHandler(MovementHandler movementHandler) {
-        this.movementHandlers.add(movementHandler);
+
     }
 
     public void removePacketHandler(PacketHandler packetHandler) {
-        this.packetHandlers.remove(packetHandler);
+
     }
 
     public void removeMovementHandler(MovementHandler movementHandler) {
-        this.movementHandlers.remove(movementHandler);
+
     }
-
-
-
 
 }
