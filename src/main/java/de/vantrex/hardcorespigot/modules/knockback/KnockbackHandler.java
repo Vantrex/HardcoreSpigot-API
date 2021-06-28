@@ -13,14 +13,13 @@ public class KnockbackHandler implements ModuleHandler {
 
     public static KnockbackHandler INSTANCE;
 
-    private final boolean vanillaKb = false;
-
-
-
-
 
     public boolean isVanillaKb() {
-        return vanillaKb;
+        return false;
+    }
+
+    public void setVanillaKb(boolean vanillaKb) {
+
     }
 
     public KnockbackModule getActiveModule() {
@@ -36,6 +35,7 @@ public class KnockbackHandler implements ModuleHandler {
     }
 
     public void setActiveConfig(KnockbackConfig config) {
+
     }
 
     public void removeConfig(String name) {
@@ -43,18 +43,23 @@ public class KnockbackHandler implements ModuleHandler {
     }
 
     public void addConfig(KnockbackConfig config, boolean save) {
+
     }
 
     public void removeConfig(KnockbackConfig config) {
+
     }
 
     public void removeModule(String name) {
+
     }
 
     public void addModule(KnockbackModule module) {
+
     }
 
     public void removeModule(KnockbackModule module) {
+
     }
 
     public Optional<KnockbackModule> getModuleByName(String name) {
@@ -80,6 +85,14 @@ public class KnockbackHandler implements ModuleHandler {
 
     @Override
     public void save() {
+
+    }
+
+    public void delete(KnockbackConfig knockbackConfig) {
+
+    }
+
+    public void save(KnockbackConfig knockbackConfig) {
 
     }
 }
